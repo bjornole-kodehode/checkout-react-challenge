@@ -72,7 +72,7 @@ function App() {
             <div key={idx} >{inQue.map((numberOfItems, lineIdx) => {
              return (
                 <div>
-                  <div className='chkout-line' key={lineIdx}><img src="/img/customer-checkout.webp"/>{numberOfItems}</div>
+                  <div className='chkout-line' key={lineIdx}><img src="./img/customer-checkout.webp"/>{numberOfItems}</div>
                 </div>
               )}
             )}

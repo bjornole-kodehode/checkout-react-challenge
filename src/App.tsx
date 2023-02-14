@@ -1,7 +1,7 @@
 import { FormEventHandler, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-
+import customerCheckOutImg from "../public/img/customer-checkout.webp"
 function App() {
   const [items, setItems] = useState<number>()
   const [chkoutLines, setChkOutLines] = useState([
@@ -72,7 +72,7 @@ function App() {
             <div key={idx} >{inQue.map((numberOfItems, lineIdx) => {
              return (
                 <div>
-                  <div className='chkout-line' key={lineIdx}><img src="./public/img/customer-checkout.webp"/>{numberOfItems}</div>
+                  <div className='chkout-line' key={lineIdx}><img src={customerCheckOutImg}/>{numberOfItems}</div>
                 </div>
               )}
             )}
